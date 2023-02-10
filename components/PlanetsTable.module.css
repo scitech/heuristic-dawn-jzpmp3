@@ -1,0 +1,19 @@
+.container {
+  border-spacing: 0;
+}
+
+.container th {
+  text-align: left;
+  border-top: 1px solid #999;
+}
+
+.container td,
+.container th {
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding: 4px;
+}
+.container td:first-child,
+.container th:first-child {
+  border-left: 1px solid #999;
+}
