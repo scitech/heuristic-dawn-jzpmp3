@@ -1,4 +1,4 @@
-This application displays a single page of statistics about the planets of Star Wars.
+This application displays a single page of statistics about some planets of Star Wars.
 
 ## Getting Started
 

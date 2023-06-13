@@ -4,10 +4,10 @@ import { PlanetsTable } from "../components/PlanetsTable";
 import { usePlanets } from "../lib/swapi";
 
 export default function Home() {
-  const { data, error, loading } = usePlanets("5");
+  const { data, error, loading } = usePlanets("1");
 
   return (
-    <Page heading="The planets of Star Wars">
+    <Page heading="Some planets of Star Wars">
       {loading ? (
         <p role="alert">Loading...</p>
       ) : error ? (
