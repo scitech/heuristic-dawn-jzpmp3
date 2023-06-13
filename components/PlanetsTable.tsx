@@ -24,7 +24,10 @@ const canDisplayValue = (
   return requiredFields.every((fieldName) => planet[fieldName] !== "unknown");
 };
 
-const PlanetRow = ({ planet }: { planet: Planet }) => {
+interface PlanetRowProps {
+  planet: Planet;
+}
+const PlanetRow = ({ planet }: PlanetRowProps) => {
   return (
     <tr key={planet.name}>
       <td>
@@ -51,7 +54,10 @@ const PlanetRow = ({ planet }: { planet: Planet }) => {
   );
 };
 
-export const PlanetsTable = ({ planets }: { planets: Planet[] }) => {
+interface PlanetsTableProps {
+  planets: Planet[];
+}
+export const PlanetsTable = ({ planets }: PlanetsTableProps) => {
   return (
     <table className={styles.container}>
       <thead>
